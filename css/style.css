@@ -1,0 +1,154 @@
+* {
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 400;
+}
+
+html {
+    height: 100%;
+}
+
+/* Body */
+body {
+    position: relative;
+    min-height: 100%;
+    padding:0;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+
+/* Header  */
+body > header {
+    background-color: #2980b9;
+    height: 164px;
+    width: 100%;
+}
+body > header > h1.title {
+    margin: 0;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    padding-left: 40px;
+}
+
+/* Nav  */
+body > header > nav {
+    background-color: #3498db;
+    height: 64px;
+    width: 100%;
+}
+
+body > header > nav > ul {
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+body > header > nav > ul > li, body > header > nav > ul > li > a  {
+    height: 64px;
+    line-height: 64px;
+    margin-right: 10px;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    min-width: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255,255,255,.6);
+    text-decoration: none;
+}
+
+body > header > nav > ul > li > a  {
+    height: 100%;
+    display: block;
+}
+
+body > header > nav > ul > li.active, body > header > nav > ul > li:hover {
+    color: white;
+    border-bottom: 4px solid white;
+    height: 60px;
+}
+
+body > header > nav > ul > li.active > a, body > header > nav > ul > li:hover > a {
+    color: white;
+}
+
+
+/* Wrapper */
+body .wrapper > * {
+    display: inline-block;
+    text-align:left;
+    padding: 5px;
+    vertical-align:top;
+}
+
+/* Content */
+body main {
+    padding-bottom: 100px;
+}
+
+body main .content {
+    position: relative;
+    height: 600px;
+}
+
+body main > section > article {
+    background-color: white;
+    max-width: 850px;
+    position: relative;
+    display: flex;
+    
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+}
+
+body main > section > article > img {
+    width: 150px;
+    height: 150px;
+}
+
+body main > section > article > div {
+    display: flex;
+    padding: 5px;;
+    flex-direction: column;
+    width: 100%;
+}
+
+body main > section > article h2 {
+    margin-top: 0;
+}
+
+body main > section > article p {
+    margin-bottom: 0;
+}
+
+body main > section > article footer {
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+body main > section > article footer a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #00BCD4;
+}
+
+body main > section > article footer a:hover {
+    color: gray;
+}
+
+
+
+/* Footer */
+
+body > footer {
+    position: absolute;
+    width: 100%;
+    background-color: #d2d6d6;
+    color: white;
+    text-align: center;
+    bottom: 0;
+    margin-top: 100px;
+    padding: 10px 0 10px 0;
+}

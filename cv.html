@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet/less" type="text/css" href="css/cv/cv.less" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+
+    <header>
+        <h1 class="title">HTML5 / CSS3 </h1>
+
+        <!-- Nav -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="social.html">Portefeuille</a></li>
+                <li><a href="compteur.html">Compteur</a></li>
+                <li><a href="game.html">Jeu</a></li>
+                <li><a href="minuteur.html">Minuteur</a></li>
+                <li><a href="color.html">Couleur</a></li>
+                <li><a href="categorie.html">Categorie</a></li>
+                <li class="active"><a href="cv.html">cv</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <input type="checkbox" name="toggle" id="toggle" />
+    <label for="toggle"></label>
+
+    <div class="main">
+
+        <div class="profil box">
+            <figure>
+                <img src="css/cv/img/profil.jpg" width="200" height="200" alt="Photo de profil">
+                <figcaption>Christophe PETRE</figcaption>
+            </figure>
+            <div>
+                <h2>Développeur Web</h2>
+                <p>Contact</p>
+                <p>Mail : christophepetre57@gmail.com</p>
+                <p>Tel : +33 7 50 50 50 50</p>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="skills box">
+            <h2>Compétences</h2>
+            <div class="diapo">
+
+                <label for="toggle3" class="toggle-label one">Toutes</label>
+
+                <label for="toggle1" class="toggle-label two">Front-end</label>
+                <label for="toggle2" class="toggle-label three">back-end</label>
+                <div class="content">
+                    <aside class="folder">
+                        <input type="radio" name="xinfo" class="toggle" id="toggle1" />
+                        <div class="fold">
+                            <img src="css/cv/img/css.png" alt="css">
+                            <img src="css/cv/img/html.png" alt="html">
+                        </div>
+                    </aside>
+
+                    <aside class="folder">
+                        <input type="radio" name="xinfo" class="toggle" id="toggle2" />
+                        <div class="fold">
+                            <img src="css/cv/img/python.png" alt="chat1">
+                            <img class="media-object" src="css/cv/img/php.png" alt="php">
+                            <img class="media-object" src="css/cv/img/c.png" alt="c">
+                        </div>
+                    </aside>
+
+                    <aside class="folder">
+                        <input type="radio" name="xinfo" class="toggle" id="toggle3" />
+                        <div class="fold">
+                            <img src="css/cv/img/css.png" alt="css">
+                            <img src="css/cv/img/html.png" alt="html">
+                            <img src="css/cv/img/python.png" alt="python">
+                            <img class="media-object" src="css/cv/img/php.png" alt="php">
+                            <img class="media-object" src="css/cv/img/c.png" alt="c">
+                        </div>
+                    </aside>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="imagetext box">
+            <h2>Langues</h2>
+
+            <div>
+                <ul>
+                    <li>Français : natale</li>
+                    <li>Espagnol : B1</li>
+                    <li>Anglais : B2</li>
+                    <li>Japonais : débutant</li>
+                </ul>
+            </div>
+            <div class="container">
+                <img src="css/cv/img/paintball_Pamplona.jpg" alt="espagne" class="image">
+                <div class="textover">
+                    <div class="text">Erasmus à Pampelune ! (seulement 2 mois merci le covid) :(</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="turnimage box">
+            <h2>Mes passions</h2>
+            <h3>Le japonais et la lecture de manga</h3>
+            <div class="imgturn">
+
+
+                <div class="box">
+                    <div class="box-inner">
+                        <div class="box-front">
+                            <img src="css/cv/img/Le-japonais-en-manga.jpg" alt="livre le japonais en manga"
+                                class="image">
+                        </div>
+                        <div class="box-back">
+                            <img src="css/cv/img/Le-japonais-en-manga2.jpg" alt="livre le japonais en manga 2"
+                                class="image">
+                        </div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box-inner">
+                        <div class="box-front">
+                            <img src="css/cv/img/tome1.jpg" alt="tome one piece 1" class="image">
+                        </div>
+                        <div class="box-back">
+                            <img src="css/cv/img/onepiece1.jpg" alt="tome1 one piece" class="image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+</body>
+
+</html>
