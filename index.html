@@ -1,81 +1,78 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- Header -->
 
     <header>
-        <h1 class="title">HTML5 / CSS3 </h1>
-        <!-- Nav -->
-        <nav>
-            <ul>
-                <li class="active"><a href="index.html">Accueil</a></li>
-                <li><a href="social.html">Portefeuille</a></li>
-                <li><a href="compteur.html">Compteur</a></li>
-                <li><a href="game.html">Jeu</a></li>
-                <li><a href="color.html">Couleur</a></li> 
-                <li><a href="cv.html">cv</a></li>
-            </ul>
-        </nav>
+
+        <div class="pp">
+
+            <div class="navMobile openbtn" id="navButton" onclick="openNav()">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <img src="img/pp.jpg" alt="pp">
+
+        </div>
+        <span>Christophe PETRE</span>
+        <div class="nav" id="navDetect">
+            <a href="#home" class="active">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+
+        </div>
+
+
+        <div id="mySidebar" class="sidebar">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            <a href="#">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
+
+
+
     </header>
 
     <main>
-        <!-- Main -->
-        <section class="content">
+
+        <section id="about" class="about">
             <article>
-
-                <div>
-                    <h2>Vitrine HTML5 / CSS3</h2>
-
-                    <p>Dans ce site vous retrouverez les différents projets que vous allez réaliser de manière à
-                        facilement
-                        les retrouver plus tard.</p>
+                <div class="section-title">
+                    <h2>À propos</h2>
+                    <p>Moi c'est Christophe, je suis passionné par l'informatique et les nouvelles technologies !</p>
                 </div>
-            </article>
 
-            <article>
-                <img src="css/index/img/google.png">
-                <div>
-                    <h2>Portefeuille</h2>
-                    <p>Dans cette partie nous allons faire des liens vers les différents réseaux sociaux.</p>
+                <div class="row">
+                    <div>
+                    </div>
+                    <div>
+                        <h3>Etudiant &amp; Développeur Web.</h3>
+                        <p>
+                            Je suis actuellement en stage pour valider ma Licence professionnelle développement web. Je viens d'un DUT informatique, finalisé par un séjour Erasmus en Espagne, à l'Université de Pampelune !
+                        </p>
+                    </div>
                 </div>
-                <footer><a href="social.html">Je veux voir</a></footer>
-            </article>
 
-            <article>
-
-                <img src="css/index/img/android.png">
-                <div>
-                    <h2>Un jeu</h2>
-                    <p>Nous allons réaliser un petit jeu sans JS.</p>
                 </div>
-                <footer><a href="game.html">Je veux voir</a></footer>
+
             </article>
-
-            <article>
-                <img src="css/index/img/minuteur.png">
-                <div>
-                    <h2>Minuteur</h2>
-
-                    <p>Et si nous pouvions compter le temps en CSS3 ?</p>
-                </div>
-                <footer><a href="minuteur.html">Je veux voir</a></footer>
-            </article>
-
         </section>
+
     </main>
 
-    <footer>
-        &copy; LPWeb 2021 Christophe PETRE
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
+
+    <script type="text/javascript" src="js/index.js"></script>
+
+
 </body>
 
 </html>
