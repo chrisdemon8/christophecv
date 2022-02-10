@@ -200,7 +200,14 @@ body main>section>article>div>h2:after {
 
 /* Home section */
 
-body main>.home>article>div>div {
+body main>.home>article>div>.basic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+body main>.home>article>div>.skills {
     display: flex;
     align-items: center;
     width: 100%;
@@ -220,11 +227,14 @@ body main>.home>article>div>.skills>img {
 }
 
 @media screen and (max-width: 600px) {
-    body main>.home>article>div>div {
+    body main>.home>article>div>.basic {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+    body main>.home>article>div>.skills {
+        display: block;
     }
     body main>.home>article>div>div>div {
         width: 300px;
