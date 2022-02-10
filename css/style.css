@@ -234,10 +234,17 @@ body main>.home>article>div>.skills>img {
         align-items: center;
     }
     body main>.home>article>div>.skills {
+        text-align: center;
         display: block;
     }
     body main>.home>article>div>div>div {
         width: 300px;
+    }
+    body main>.home>article>div>.skills>img {
+        width: 15%;
+        text-align: center;
+        line-height: 0;
+        vertical-align: middle;
     }
 }
 
@@ -257,6 +264,28 @@ body main>.home>article>div>div>div>ul>li {
 
 body main>.home>article>div>div>div>ul>li>strong {
     font-weight: bold;
+}
+
+
+/* End home section */
+
+
+/* portfolio section */
+
+body main>.portfolio>article>div>.basic {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 600px) {
+    body main>.portfolio>article>div>.basic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 
