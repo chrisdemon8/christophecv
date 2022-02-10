@@ -1,6 +1,7 @@
 * {
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
+    font-size: 18px;
 }
 
 html {
@@ -167,42 +168,101 @@ body main {
     padding-bottom: 100px;
 }
 
-body main .content {
-    position: relative;
-    height: 600px;
-}
-
 body main>section>article {
     background-color: white;
-    border-radius: 10px;
     max-width: 850px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 20px;
     margin: auto;
-    margin-top: 30px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-body main>section>article>img {
-    width: 150px;
-    height: 150px;
+body main>section>article>div>h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #173b6c;
 }
 
-body main>section>article>div {
+body main>section>article>div>h2:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #149ddd;
+    bottom: 0;
+    left: 0;
+}
+
+
+/* Home section */
+
+body main>.home>article>div>div {
     display: flex;
-    padding: 5px;
-    ;
-    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+}
+
+body main>.home>article>div>.skills {
+    display: flex;
     width: 100%;
 }
 
-body main>section>article h2 {
-    margin-top: 0;
+body main>.home>article>div>.skills>img {
+    width: 10%;
+    text-align: center;
+    line-height: 0;
+    vertical-align: middle;
 }
 
-body main>section>article p {
-    margin-bottom: 0;
+@media screen and (max-width: 600px) {
+    body main>.home>article>div>div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    body main>.home>article>div>div>div {
+        width: 300px;
+    }
+}
+
+body main>.home>article>div>div>div>ul {
+    list-style: none;
+    padding: 0;
+}
+
+body main>.home>article>div>div>div>ul {
+    list-style: none;
+    padding: 0;
+}
+
+body main>.home>article>div>div>div>ul>li {
+    padding-left: 1.3em;
+}
+
+body main>.home>article>div>div>div>ul>li>strong {
+    font-weight: bold;
+}
+
+
+/* End home section */
+
+body main>section>article .center {
+    text-align: center;
+}
+
+body main>section>article img {}
+
+body main>section>article>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 650px;
 }
 
 body main>section>article footer {
