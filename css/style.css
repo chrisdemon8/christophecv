@@ -33,6 +33,7 @@ header {
 }
 
 header>.pp {
+    z-index: 1;
     display: flex;
     justify-content: center;
     background-color: rgb(63, 81, 181);
