@@ -365,8 +365,6 @@ body main>.portfolio>article>div>.grid>a>div>ul>li:not(:last-of-type) {
 
 /* Contact section */
 
-body main>.contact>article>h2 {}
-
 body main>.contact>article>div>.info {
     display: flex;
     position: relative;
@@ -410,7 +408,7 @@ body main>section>article footer a:hover {
 body>footer {
     position: absolute;
     width: 100%;
-    background-color: #d2d6d6;
+    background-color: rgb(50, 65, 145);
     color: white;
     text-align: center;
     bottom: 0;
