@@ -163,6 +163,7 @@ header>.navMobileSlide {
 }
 
 .sticky {
+    position: fixed;
     top: 0;
     width: 100%;
     transition: 2s;

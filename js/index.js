@@ -45,15 +45,11 @@ function navFunction() {
         if (window.pageYOffset >= sticky) {
             navbar.classList.add("sticky")
         } else {
-
             navbar.classList.remove("sticky");
         }
     } else {
 
-
-
         if (window.pageYOffset > stickyMobile) {
-
             imgResize.style.width = "40px";
             imgResize.style.height = "40px";
             navbarMobile.classList.add("sticky");
@@ -61,7 +57,6 @@ function navFunction() {
             imgResize.style.width = "150px";
             imgResize.style.height = "150px";
             navbarMobile.classList.remove("sticky");
-
         }
 
     }
