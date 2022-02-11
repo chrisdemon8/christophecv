@@ -65,3 +65,7 @@ function navFunction() {
 
 
 }
+
+function sendEmail() {
+    window.location = "mailto:christophepetre57@gmail.com";
+}

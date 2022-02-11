@@ -60,6 +60,7 @@ header>.pp>img {
 }
 
 header>.nav {
+    z-index: 1;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -282,24 +283,98 @@ body main>.home>article>div>div>div>ul>li>strong {
 
 /* portfolio section */
 
-body main>.portfolio>article>div>.basic {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-around;
+body main>.portfolio>article>div>.grid {
+    display: grid;
+    gap: 15px;
+    position: relative;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-@media screen and (max-width: 600px) {
-    body main>.portfolio>article>div>.basic {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+body main>.portfolio>article>div>.grid>div {
+    width: 100%;
+}
+
+body main>.portfolio>article>div>.grid>a {
+    box-shadow: 0 10px 30px -15px var(--navy-shadow);
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    text-decoration: none;
+    background-color: #112240;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+body main>.portfolio>article>div>.grid>a>div>p {
+    color: #a8b2d1;
+    font-size: 17px;
+}
+
+body main>.portfolio>article>div>.grid>a>h3 {
+    color: #ccd6f6;
+    font-size: 22px;
+}
+
+body main>.portfolio>article>div>.grid>a>div>ul {
+    display: flex;
+    align-items: flex-end;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin: 20px 0px 0px;
+    list-style: none;
+}
+
+body main>.portfolio>article>div>.grid>a>div>ul>li {
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    font-size: 12px;
+    line-height: 1.75;
+}
+
+body main>.portfolio>article>div>.grid>a>div>ul>li:not(:last-of-type) {
+    margin-right: 15px;
+}
+
+@media screen and (max-width: 990px) {
+    body main>.portfolio>article>div>.grid {
+        display: grid;
+        gap: 15px;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    body main>.portfolio>article>div>.grid {
+        display: grid;
+        gap: 15px;
+        position: relative;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
 
-/* End home section */
+/* End portfolio section */
+
+
+/* Contact section */
+
+body main>.contact>article>h2 {}
+
+body main>.contact>article>div>.info {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* End Contact section */
 
 body main>section>article .center {
     text-align: center;
@@ -309,7 +384,7 @@ body main>section>article>div {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 650px;
+    max-width: 750px;
 }
 
 body main>section>article footer {
