@@ -1,15 +1,12 @@
 * {
-    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-family: Roboto, Helvetica, Arial, sans-serif;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 18px
 }
 
 html {
-    height: 100%;
+    height: 100%
 }
-
-
-/* Body */
 
 body {
     position: relative;
@@ -17,26 +14,23 @@ body {
     padding: 0;
     margin: 0;
     background-color: #f5f5f5;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
-
-/* Header Nav  */
-
 header {
-    color: white;
+    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(63, 81, 181);
+    background-color: #3f51b5
 }
 
 header>.pp {
     z-index: 1;
     display: flex;
     justify-content: center;
-    background-color: rgb(63, 81, 181);
+    background-color: #3f51b5
 }
 
 header>.pp>.navMobile {
@@ -45,19 +39,19 @@ header>.pp>.navMobile {
     cursor: pointer;
     position: absolute;
     left: 0;
-    padding: 20px;
+    padding: 20px
 }
 
 header>span {
     margin-bottom: 10px;
-    font-size: x-large;
+    font-size: x-large
 }
 
 header>.pp>img {
     border-radius: 75px;
     margin: 15px;
     width: 150px;
-    height: 150px;
+    height: 150px
 }
 
 header>.nav {
@@ -65,8 +59,8 @@ header>.nav {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgb(50, 65, 145);
-    overflow: hidden;
+    background-color: #324191;
+    overflow: hidden
 }
 
 header>.nav>a {
@@ -74,40 +68,40 @@ header>.nav>a {
     flex: 1;
     float: left;
     display: block;
-    color: rgba(232, 230, 227, 0.6);
+    color: rgba(232, 230, 227, .6);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 17px
 }
 
 header>.nav>a:hover {
-    color: white;
+    color: #fff
 }
 
 header>.nav>a.active {
-    border-bottom: 4px solid white;
-    color: white;
+    border-bottom: 4px solid #fff;
+    color: #fff
 }
 
 header>.nav>.icon {
-    display: none;
+    display: none
 }
 
 header>.navMobileSlide {
-    display: none;
+    display: none
 }
 
 .sidebar {
-    display: none;
+    display: none
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
     header>.pp>.navMobile {
-        display: block;
+        display: block
     }
     header>.nav {
-        display: none;
+        display: none
     }
     .sidebar {
         display: block;
@@ -117,10 +111,10 @@ header>.navMobileSlide {
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: rgb(27, 29, 30);
+        background-color: #1b1d1e;
         overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+        transition: .5s;
+        padding-top: 60px
     }
     .sidebar a {
         padding: 8px 8px 8px 32px;
@@ -128,38 +122,38 @@ header>.navMobileSlide {
         font-size: 25px;
         color: #818181;
         display: block;
-        transition: 0.3s;
+        transition: .3s
     }
     .sidebar a:hover {
-        color: #f1f1f1;
+        color: #f1f1f1
     }
     .sidebar .closebtn {
         position: absolute;
         top: 0;
         right: 25px;
         font-size: 36px;
-        margin-left: 50px;
+        margin-left: 50px
     }
     .openbtn {
         font-size: 20px;
         cursor: pointer;
-        color: white;
+        color: #fff;
         padding: 10px 15px;
-        border: none;
+        border: none
     }
     .openbtn:hover {
-        background-color: rgba(232, 230, 227, 0.6);
+        background-color: rgba(232, 230, 227, .6)
     }
     #main {
         transition: margin-left .5s;
-        padding: 16px;
+        padding: 16px
     }
-    @media screen and (max-height: 450px) {
+    @media screen and (max-height:450px) {
         .sidebar {
-            padding-top: 15px;
+            padding-top: 15px
         }
         .sidebar a {
-            font-size: 18px;
+            font-size: 18px
         }
     }
 }
@@ -168,35 +162,29 @@ header>.navMobileSlide {
     position: fixed;
     top: 0;
     width: 100%;
-    transition: 2s;
+    transition: 2s
 }
 
-
-/* End header nav */
-
-
-/* Content */
-
 body main {
-    padding-bottom: 100px;
+    padding-bottom: 100px
 }
 
 body main>section>article {
-    background-color: white;
+    background-color: #fff;
     max-width: 850px;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 20px;
-    margin: auto;
+    margin: auto
 }
 
 body main>section>article>div>h2 {
     font-size: 32px;
-    font-weight: bold;
+    font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 20px;
-    color: #173b6c;
+    color: #173b6c
 }
 
 body main>section>article>div>h2:after {
@@ -206,93 +194,84 @@ body main>section>article>div>h2:after {
     height: 3px;
     background: #149ddd;
     bottom: 0;
-    left: 0;
+    left: 0
 }
-
-
-/* Home section */
 
 body main>.home>article>div>.basic {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
 body main>.home>article>div>.skills {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-around
 }
 
 body main>.home>article>div>.skills {
     display: flex;
-    width: 100%;
+    width: 100%
 }
 
 body main>.home>article>div>.skills>img {
     width: 10%;
     text-align: center;
     line-height: 0;
-    vertical-align: middle;
+    vertical-align: middle
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width:600px) {
     body main>.home>article>div>.basic {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center
     }
     body main>.home>article>div>.skills {
         text-align: center;
-        display: block;
+        display: block
     }
     body main>.home>article>div>div>div {
-        width: 300px;
+        width: 300px
     }
     body main>.home>article>div>.skills>img {
         width: 15%;
         text-align: center;
         line-height: 0;
-        vertical-align: middle;
+        vertical-align: middle
     }
 }
 
 body main>.home>article>div>div>div>ul {
     list-style: none;
-    padding: 0;
+    padding: 0
 }
 
 body main>.home>article>div>div>div>ul {
     list-style: none;
-    padding: 0;
+    padding: 0
 }
 
 body main>.home>article>div>div>div>ul>li {
-    padding-left: 1.3em;
+    padding-left: 1.3em
 }
 
 body main>.home>article>div>div>div>ul>li>strong {
-    font-weight: bold;
+    font-weight: 700
 }
-
-
-/* End home section */
-
-
-/* portfolio section */
 
 body main>.portfolio>article>div>.grid {
     display: grid;
     gap: 15px;
     position: relative;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr)
 }
 
 body main>.portfolio>article>div>.grid>div {
-    width: 100%;
+    width: 100%
 }
 
 body main>.portfolio>article>div>.grid>a {
@@ -305,19 +284,19 @@ body main>.portfolio>article>div>.grid>a {
     text-decoration: none;
     background-color: #112240;
     padding: 10px;
-    color: white;
+    color: #fff;
     border-radius: 4px;
-    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all .25s cubic-bezier(.645, .045, .355, 1)
 }
 
 body main>.portfolio>article>div>.grid>a>div>p {
     color: #a8b2d1;
-    font-size: 17px;
+    font-size: 17px
 }
 
 body main>.portfolio>article>div>.grid>a>h3 {
     color: #ccd6f6;
-    font-size: 22px;
+    font-size: 22px
 }
 
 body main>.portfolio>article>div>.grid>a>div>ul {
@@ -326,57 +305,48 @@ body main>.portfolio>article>div>.grid>a>div>ul {
     -webkit-box-flex: 1;
     flex-grow: 1;
     flex-wrap: wrap;
-    padding: 0px;
-    margin: 20px 0px 0px;
-    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    list-style: none
 }
 
 body main>.portfolio>article>div>.grid>a>div>ul>li {
     font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
     font-size: 12px;
-    line-height: 1.75;
+    line-height: 1.75
 }
 
 body main>.portfolio>article>div>.grid>a>div>ul>li:not(:last-of-type) {
-    margin-right: 15px;
+    margin-right: 15px
 }
 
-@media screen and (max-width: 990px) {
+@media screen and (max-width:990px) {
     body main>.portfolio>article>div>.grid {
         display: grid;
         gap: 15px;
         position: relative;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr)
     }
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width:580px) {
     body main>.portfolio>article>div>.grid {
         display: grid;
         gap: 15px;
         position: relative;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr)
     }
 }
-
-
-/* End portfolio section */
-
-
-/* Contact section */
 
 body main>.contact>article>div>.info {
     display: flex;
     position: relative;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
-
-/* End Contact section */
-
 body main>section>article .center {
-    text-align: center;
+    text-align: center
 }
 
 body main>section>article>div {
@@ -384,34 +354,31 @@ body main>section>article>div {
     flex-direction: column;
     justify-content: center;
     max-width: 750px;
-    width: 100%;
+    width: 100%
 }
 
 body main>section>article footer {
     position: absolute;
     bottom: 10px;
-    right: 15px;
+    right: 15px
 }
 
 body main>section>article footer a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #00BCD4;
+    color: #00bcd4
 }
 
 body main>section>article footer a:hover {
-    color: gray;
+    color: gray
 }
-
-
-/* Footer */
 
 body>footer {
     position: absolute;
     width: 100%;
-    background-color: rgb(50, 65, 145);
-    color: white;
+    background-color: #324191;
+    color: #fff;
     text-align: center;
     bottom: 0;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 10px 0
 }
